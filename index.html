@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Five Second Test</title>
+  <meta name="description" content="A five-second test is a usability test in which a participant is shown the user interface of a website or app for five seconds.">
+  <meta name="author" content="Niklas Jordan">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <script type="text/javascript">
+    function fivesecondtest(){
+        var userInput = document.getElementById('userInput').value;
+        var lnk = document.getElementById('lnk');
+        lnk.href = "/test.html?url=" + userInput;
+        document.getElementById('box').style.display = 'none';
+        document.getElementById('box-start').style.display = 'block';
+    }
+  </script>
+
+  <header>
+    <div id="box">
+      <h1>The <span class="handwritten through">quick'n'dirty</span> five second test</h1>
+      <p>With five second tests you can optimize the clarity of your website by measuring first impressions. These will increase your leads and the satisfaction of your users.</p>
+      <p class="bigger"><span class="handwritten">Test your website or webapp now:</span></p>
+      <input type="url" id="userInput" placeholder="https://www.google.com" required/>
+      <input type="submit" onclick="fivesecondtest()" value="Create test"/>
+    </div>
+    <div id="box-start" style="display: none;">
+      <p class="h1">Ready?</p>
+      <p>When you are ready, take a deep breath and click on the button to start the test.</p>
+      <p><a href="" id="lnk" class="button white start">Start your five second test</a></p>
+    </div>
+  </header>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700|Caveat:400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: #eee;
+  font-size: 100%;
+}
+
+h1, .h1 {
+  font-size: 6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #1E90FF;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.handwritten {
+  font-family: 'Caveat', sans-serif;
+  font-weight: 500;
+}
+
+.through {
+  text-decoration: line-through;
+}
+
+header {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#box {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+  border-radius: 2px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+#box-start {
+  background: #1E90FF;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+  border-radius: 2px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.bigger {
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+input {
+    border: 2px solid #ddd;
+    border-radius: 2px;
+    text-indent: 10px;
+    font-size: 3rem;
+    height: 100px;
+    box-shadow: none;
+    width: 100%;
+    display: block;
+}
+
+.button, input[type="submit"] {
+    border: none;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s;
+    background: #1E90FF;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    display: block;
+    height: 100px;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.button:hover, input[type="submit"]:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.button.white {
+  background: white;
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  header {
+    padding: 100px 0px;
+  }
+
+  #box {
+    max-width: 700px;
+  }
+
+  #box-start {
+    max-width: 700px;
+  }
+
+  .bigger {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  input {
+      height: 48px;
+      width: 70%;
+      float: left;
+      font-size: 1.5rem;
+  }
+
+  .button, input[type="submit"] {
+      width: 27%;
+      float: right;
+      display: block;
+      height: 53px;
+      margin-top: 0px;
+  }
+
+  .button {
+      float: none;
+      padding: 15px;
+      height: auto;
+      margin: 0 auto;
+      width: auto;
+      display: inline;
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Five Second Test</title>
+  <meta name="description" content="A five-second test is a usability test in which a participant is shown the user interface of a website or app for five seconds.">
+  <meta name="author" content="Niklas Jordan">
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <script type="text/javascript">
+    function changeText2(){
+        var userInput = document.getElementById('userInput').value;
+        var lnk = document.getElementById('lnk');
+        lnk.href = "/test.html?url=" + userInput;
+        lnk.innerHTML = "Test starten";
+    }
+  </script>
+
+  <header>
+    <div id="box">
+      <h1>It's over now.</h1>
+      <p><img src="https://media3.giphy.com/media/tYOA3u3Xqg0TK/giphy.gif" /></p>
+      <p><strong>Questions you can ask now:</strong></p>
+      <p><span class="handwritten">What do you remember on the website?<br />
+      What sells the company?<br />
+      What did you notice immediately?</span></p>
+      <p>&nbsp;</p>
+      <p><a class="button" href="javascript:history.go(-1)">Restart this test</a> <a href="/index.html">Go home.</a></p>
+    </div>
+  </header>
+
+</body>
+</html>

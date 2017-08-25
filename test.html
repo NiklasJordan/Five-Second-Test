@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Five Second Test</title>
+  <meta name="description" content="A five-second test is a usability test in which a participant is shown the user interface of a website or app for five seconds.">
+  <meta name="author" content="Niklas Jordan">
+</head>
+
+<body style="margin:0px;">
+  <iframe id="lnk" style="position: absolute; height: 100%; border: none" src="" width="100%" frameborder="0" scrolling="yes"></iframe>
+
+  <script language="javascript">
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    var test = url.searchParams.get("url");
+
+    document.getElementById('lnk').src= test;
+
+    setTimeout("top.location.href = '/thanks.html'",5000);
+  </script>
+</body>
+</html>
